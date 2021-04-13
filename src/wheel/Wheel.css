@@ -1,0 +1,121 @@
+li:first-child .text {
+  background-color: #e53631;
+}
+li:nth-child(2) .text {
+  background-color: #151d42;
+}
+li:nth-child(3) .text {
+  background-color: #e53631;
+}
+li:nth-child(4) .text {
+  background-color: #151d42;
+}
+li:nth-child(5) .text {
+  background-color: #e53631;
+}
+li:nth-child(6) .text {
+  background-color: #151d42;
+}
+li:nth-child(7) .text {
+  background-color: #e53631;
+}
+li:nth-child(8) .text {
+  background-color: #151d42;
+}
+li:nth-child(9) .text {
+  background-color: #e53631;
+}
+li:nth-child(10) .text {
+  background-color: #151d42;
+}
+li:nth-child(11) .text {
+  background-color: #e53631;
+}
+li:nth-child(12) .text {
+  background-color: #151d42;
+}
+
+li:first-child {
+  transform: rotate(0deg) skewY(-60deg);
+}
+li:nth-child(2) {
+  transform: rotate(30deg) skewY(-60deg);
+}
+li:nth-child(3) {
+  transform: rotate(60deg) skewY(-60deg);
+}
+li:nth-child(4) {
+  transform: rotate(90deg) skewY(-60deg);
+}
+li:nth-child(5) {
+  transform: rotate(120deg) skewY(-60deg);
+}
+li:nth-child(6) {
+  transform: rotate(150deg) skewY(-60deg);
+}
+li:nth-child(7) {
+  transform: rotate(180deg) skewY(-60deg);
+}
+li:nth-child(8) {
+  transform: rotate(210deg) skewY(-60deg);
+}
+li:nth-child(9) {
+  transform: rotate(240deg) skewY(-60deg);
+}
+li:nth-child(10) {
+  transform: rotate(270deg) skewY(-60deg);
+}
+li:nth-child(11) {
+  transform: rotate(300deg) skewY(-60deg);
+}
+li:nth-child(12) {
+  transform: rotate(330deg) skewY(-60deg);
+}
+
+.circle {
+  width: 30em;
+  height: 30em;
+  list-style: none;
+  overflow: hidden;
+  border: 1px solid black;
+  position: relative;
+  margin: 1px auto;
+  padding: 0;
+  border-radius: 50%;
+}
+
+li {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+}
+
+.text {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  display: block;
+  transform: skewY(60deg) rotate(15deg);
+  padding-top: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  z-index: 200;
+}
+
+@media only screen and (max-width: 768px) {
+  .circle {
+    width: 23em;
+    height: 23em;
+  }
+  .text > img {
+    width: 60px !important;
+  }
+}
