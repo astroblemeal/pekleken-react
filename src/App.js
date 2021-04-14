@@ -1,6 +1,6 @@
 import "./App.css";
 import ReadySetGo from "./ready_set_go/ReadySetGo";
-import Wheel from "./wheel/Wheel";
+// import Wheel from "./wheel/Wheel";
 import styled from "styled-components";
 import box from "./images/box.png";
 
@@ -21,7 +21,7 @@ const Welcome = () => (
     <GlowingText>
       <h1>Peklen XXX!</h1>
     </GlowingText>
-    <img width="300px" src={box} alt="" />
+    <img width="250px" src={box} alt="" />
     <p style={{ color: "white" }}>Swipa ner</p>
   </div>
 );
@@ -92,15 +92,15 @@ const Play = () => (
   </div>
 );
 
-const WheelOfFortune = () => (
-  <div style={stepStyle} id="wheel">
-    <TextContainer>
-      <h1>Spin the Wheel</h1>
-    </TextContainer>
-    <Wheel />
-    <p style={{ color: "white" }}>Swipa upp</p>
-  </div>
-);
+// const WheelOfFortune = () => (
+//   <div style={stepStyle} id="wheel">
+//     <TextContainer>
+//       <h1>Spin the Wheel</h1>
+//     </TextContainer>
+//     <Wheel />
+//     <p style={{ color: "white" }}>Swipa upp</p>
+//   </div>
+// );
 
 function App() {
   return (
@@ -113,7 +113,7 @@ function App() {
         <Step4 />
         <Step5 />
         <Play />
-        <WheelOfFortune />
+        {/* <WheelOfFortune /> */}
       </div>
     </div>
   );
@@ -127,7 +127,7 @@ const TextContainer = styled.div`
 
   > h1 {
     font-family: "Londrina Solid", cursive;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: justify;
     line-height: 1.5;
     color: rgb(255 255 255);

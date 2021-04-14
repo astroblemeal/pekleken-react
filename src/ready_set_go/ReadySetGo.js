@@ -45,7 +45,7 @@ function ReadySetGo() {
       : "purple";
 
   const buttonStyles = {
-    fontSize: "100px",
+    fontSize: "50px",
     borderRadius: "50%",
     height: "300px",
     fontFamily: "Londrina Solid, cursive",
